@@ -1,0 +1,57 @@
+
+
+.modal_wrapper {
+
+    margin:auto;
+    margin-top:30vh;
+    background-color: #38383e;
+    height:300px;
+    width: 400px;
+    border-radius: 10px;
+
+}
+
+
+.content_wrapper{
+
+    display: grid;
+    grid-template-areas:
+    "login"
+    "google";
+    grid-template-columns:1fr;
+    gap: 3px;
+
+
+}
+
+.modal_header {
+  display: flex;
+}
+
+.close {
+    margin-left: auto;
+    font-size: 40px;
+    font-weight: bold;
+    color:white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.login{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.google {
+    text-align: center;
+    border-radius: 30px;
+    background-color: #414853;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    cursor:pointer;
+}

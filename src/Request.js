@@ -10,25 +10,20 @@ const [reqData, setReqData] = useState('');
 
   const getRequest = () => {
 
-
 	  
-    return apiClient.get('/').then(response => setReqData(response.data));
+    return apiClient.get('/').then(response => setReqData(response.data)).catch(err=> alert("please try again"));
 
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        !
+   
+      <>
+        <button onClick={() => getRequest()  } >
+            getRequest         
+        </button>	  
+        {reqData}
+     </>
 
-
-     <button onClick={() => getRequest()  } >
-         getRequest         
-     </button>	  
-	  {reqData}
-</header>
-
-    </div>
   );
 }
 
