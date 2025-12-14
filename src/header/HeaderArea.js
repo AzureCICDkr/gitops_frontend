@@ -16,11 +16,11 @@ const Header = () => {
     const isLogin = useLoginStore((state) => state.isLogin);
     const logIn = useLoginStore((state) => state.logIn);
     const logOut = useLoginStore((state) => state.logOut);
-    const openModal = useModalStore((state)=> state.openModal)
-    const closeModal = useModalStore((state)=> state.closeModal);
+    const openModal = useModalStore((state)=> state.openModal);
+
     useEffect(() => {
         console.log(isLogin, logIn, logOut);
-    }, [isLogin]);
+    }, []);
 
 
     const onBtnClickHandler = (param) => {

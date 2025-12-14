@@ -1,4 +1,6 @@
 
 .chatting_area_wrap {
+        display: flex;
+        flex-direction: column;
 
 }

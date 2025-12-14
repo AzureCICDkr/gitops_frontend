@@ -2,10 +2,10 @@
 
 
 .chatting_box_wrap {
-
-    text-align: center;
-    width: 40%;
-    height: 90%;
-    margin: auto;
-
+    flex: 1;
+    padding: 16px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #2b2929;
+    position: relative;
 }
